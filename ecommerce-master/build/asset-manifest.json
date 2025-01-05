@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/E-commerce_store/static/css/main.2701a654.css",
+    "main.js": "/E-commerce_store/static/js/main.8ffaba0a.js",
+    "static/media/bougie-3.png": "/E-commerce_store/static/media/bougie-3.a69d8767ef95326b4701.png",
+    "static/media/photo1.png": "/E-commerce_store/static/media/photo1.9b9c445f8c41ae5d5d79.png",
+    "static/media/acc-4.png": "/E-commerce_store/static/media/acc-4.d3b5902c869abd112640.png",
+    "static/media/tiger.png": "/E-commerce_store/static/media/tiger.285d05b6ffc708641c57.png",
+    "static/media/acc-1.png": "/E-commerce_store/static/media/acc-1.9b341f6c8e93119a14ec.png",
+    "static/media/bg.jpg": "/E-commerce_store/static/media/bg.dbfce4a8bc126b49e3ff.jpg",
+    "static/media/product-1-type-2.png": "/E-commerce_store/static/media/product-1-type-2.2535856002def6bba103.png",
+    "static/media/acc-3.png": "/E-commerce_store/static/media/acc-3.094dfde0e977ed9a1fce.png",
+    "static/media/bg-contact-us.jpeg": "/E-commerce_store/static/media/bg-contact-us.b68241a85a3161670d18.jpeg",
+    "static/media/acc-2.png": "/E-commerce_store/static/media/acc-2.db5d95102863a2e97ea1.png",
+    "static/media/shirt.png": "/E-commerce_store/static/media/shirt.87c50f4ae9e070cce59c.png",
+    "static/media/imgGravata.png": "/E-commerce_store/static/media/imgGravata.12b957d3cec5c674cf74.png",
+    "static/media/imgBelt.png": "/E-commerce_store/static/media/imgBelt.099145738bedb2ca3e13.png",
+    "static/media/imgShirt.png": "/E-commerce_store/static/media/imgShirt.fac750fffbc5e7ce91c9.png",
+    "static/media/imgShoe.png": "/E-commerce_store/static/media/imgShoe.33a821bda7c9ff560f31.png",
+    "static/media/imgJacket.png": "/E-commerce_store/static/media/imgJacket.bfad7827f67ccee6cc70.png",
+    "static/media/imgJacketGree.png": "/E-commerce_store/static/media/imgJacketGree.922367c818625064aade.png",
+    "static/media/imgPant.png": "/E-commerce_store/static/media/imgPant.6495c15010734dd908ae.png",
+    "index.html": "/E-commerce_store/index.html",
+    "main.2701a654.css.map": "/E-commerce_store/static/css/main.2701a654.css.map",
+    "main.8ffaba0a.js.map": "/E-commerce_store/static/js/main.8ffaba0a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2701a654.css",
+    "static/js/main.8ffaba0a.js"
+  ]
+}
