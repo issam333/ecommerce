@@ -3,8 +3,8 @@ import React from "react";
 function intro() {
   return (
     <div id="intro">
-      <div  className="w-[90%] mx-auto h-[500px] z-1 ">
-        <div className="absolute top-1/3">
+      <div  className=" absolute w-[90%] mx-auto h-[500px]">
+        <div className="mt-[200px] ml-8">
           <h2 className="text-[64px] text-white font-bold">La Sape</h2>
           <p className="text-[32px] text-white">
             Société des Ambianceurs et des Personnes Élégantes

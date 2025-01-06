@@ -8,10 +8,9 @@ const Header = () => {
   const [showSearch, setShowSearch] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
   const navigate = useNavigate();
-
   return (
-    <div className=" capitalize w-[100%] relative h-full">
-      <div class="absolute top-0 left-0 inset-0 bg-[rgba(0,0,0,0.5)]">
+    <div className="z-10 capitalize w-[100%] top-0 fixed">
+      <div class=" bg-[rgba(0,0,0,0.5)]">
         <nav className="px-4 py-2 z-50 bg-black fixed w-full lg:flex ">
           <div className="flex justify-between w-[100%] items-center">
             {/* part left */}
