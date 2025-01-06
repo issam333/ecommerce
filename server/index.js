@@ -5,6 +5,13 @@ const { signIn, login, home } = require("./routes/index.js");
 const app = express();
 const cors = require("cors");
 const User = require("./model/userSchema.js");
+const CloudinaryFun = require('./config/cloudinary.js');
+const importImages = require("./config/importImages.js")
+
+
+// cloudinary Configuration
+
+CloudinaryFun();
 
 // تفعيل CORS
 app.use(cors());
@@ -27,6 +34,8 @@ const PORT = process.env.PORT;
 app.use("/api/signin", signIn);
 app.use("/api/login", login);
 app.use("/", home);
+app.use("/api/images", importImages);
+
 app.get("/test", async (req, res) => {
   try {
     let data = await User.find({});
