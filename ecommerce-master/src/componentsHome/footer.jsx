@@ -13,7 +13,7 @@ export default function Footer() {
               Société des Ambianceurs et des Personnes Élégantes{" "}
             </p>
           </div>
-          
+
           <ul>
             <h2 className="leading-[70px] font-[Roboto-Serif] text-2xl w-auto font-bold ">
               home

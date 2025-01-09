@@ -4,7 +4,6 @@ import { Route, Routes } from "react-router-dom";
 const HomePage = () => {
   return (
     <div className=" overflow-x-hidden">
-      
       <Routes>
         <Route path="/" element={<Index />} />
       </Routes>

@@ -5,4 +5,8 @@ module.exports = {
     extend: {},
   },
   plugins: [],
+  plugins: [
+    require('tailwindcss-textshadow'),
+    require('tailwind-scrollbar'),
+  ],
 };
