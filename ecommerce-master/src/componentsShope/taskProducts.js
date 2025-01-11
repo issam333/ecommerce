@@ -4,13 +4,15 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 function TaskProducts() {
-  const [showReview, setShowReviews] = useState(null);
+
   const [imagesUrl, setImagesUrl] = useState([]);
   const [imgName, setImgName] = useState([]);
   const [imgDescription, setImgDescription] = useState([]);
   const [scaledImage, setScaledImage] = useState(null);
+  const [imgPrice, setImgPrice] = useState([]);
 
-  console.log(imagesUrl);
+  const [imgCategories, setImgCategories] = useState([]);
+
   useEffect(() => {
     const fetchImages = async () => {
       try {
@@ -21,9 +23,13 @@ function TaskProducts() {
           const dataUrl = response.data.map((el) => el.imageData.url);
           const imgName = response.data.map((el) => el.name);
           const imgDescription = response.data.map((el) => el.description);
+          const imgPrice = response.data.map((el) => el.price);
+          const categories = response.data.map((el) => el.categories);
           setImagesUrl(dataUrl);
           setImgName(imgName);
           setImgDescription(imgDescription);
+          setImgPrice(imgPrice);
+          setImgCategories(categories);
         }
       } catch (error) {
         console.error("Error fetching images:", error); // طباعة الخطأ إذا حدث
@@ -72,7 +78,7 @@ function TaskProducts() {
 
           {/* السعر */}
           <div className="text-center w-[100%]">
-            <p className="text-xl font-semibold text-green-500 ">$49.99</p>
+            <p className="text-xl font-semibold text-green-500 ">{imgPrice[id]}</p>
           </div>
         </div>
 
@@ -103,7 +109,7 @@ function TaskProducts() {
     ));
   };
   return (
-    <div className=" flex justify-center flex-wrap gap-y-10 gap-x-3 w-[100%] col-span-3 p-5 text-center h-[90.5vh] overflow-y-scroll">
+    <div className=" flex justify-center pb-[100px] flex-wrap gap-y-10 gap-x-3 w-[100%] col-span-3 p-5 text-center h-[90.5vh] overflow-y-scroll">
       {lopCards()}
     </div>
   );

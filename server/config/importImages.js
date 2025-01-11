@@ -35,21 +35,21 @@ router.get("/", async (req, res) => {
       {
         image: images[2],
         price: "$19.99",
-        categories: "",
+        categories: "men",
         discription: "image3",
         name: " joon-tae-kim",
       },
       {
         image: images[3],
         price: "$149.99",
-        categories: "",
+        categories: "men",
         discription: "image4",
         name: " rajeshverma",
       },
       {
         image: images[4],
         price: "$19,99",
-        categories: "",
+        categories: "men",
         discription: "image5",
         name: " rajeshverma",
       },
@@ -70,14 +70,14 @@ router.get("/", async (req, res) => {
       {
         image: images[7],
         price: "$69.99",
-        categories: "",
+        categories: "men",
         discription: "image8",
         name: " azurite-has",
       },
       {
         image: images[8],
         price: "$59.99",
-        categories: "",
+        categories: "men",
         discription: "image9",
         name: " pavel-danilyuk",
       },
@@ -89,11 +89,12 @@ router.get("/", async (req, res) => {
         name: " rtempodrez",
       },
     ];
-
     const dataimages = data.map((image, index) => ({
       imageData: image.image,
       name: image.name,
       description: image.discription,
+      price: image.price,
+      categories: image.categories,
     }));
 
     res.status(200).json(dataimages);
